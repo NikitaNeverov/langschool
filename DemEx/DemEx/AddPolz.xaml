@@ -1,0 +1,99 @@
+﻿<Window x:Class="DemEx.AddPolz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemEx"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="Add Client" Height="706.5" Width="700">
+    <Grid>
+        <Image 
+            Margin="292,0,0,549" 
+            Source="school_logo.ico" HorizontalAlignment="Left" Width="118" Height="128" VerticalAlignment="Bottom"/>
+        <TextBlock Margin="252,0,0,467" FontFamily="Comic Sans MS" 
+                   Foreground="#04A0FF" 
+                   FontStyle="Italic" 
+                   FontSize="18" TextAlignment ="Center" FontWeight="Thin" HorizontalAlignment="Left" Width="204" Height="82" VerticalAlignment="Bottom">
+                   Школа 
+                   <LineBreak />
+                   Иностранных Языков
+                   <LineBreak />
+                   “Лангуаге”
+        </TextBlock>
+        <TextBox x:Name="Imya" 
+            Height="32" 
+            Margin="52,0,452,404" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Bottom"
+            BorderThickness="3"
+            BorderBrush="#FAE7BF" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="18" Text="Введите Имя"/>
+        <TextBox x:Name="Family" 
+            Height="32" 
+            Margin="266,0,238,404" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Bottom"
+            BorderThickness="3"
+            BorderBrush="#FAE7BF" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="18" Text="Введите Фамилию"/>
+        <TextBox x:Name="otchestvo" 
+            Height="32" 
+            Margin="480,0,24,404" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Bottom"
+            BorderThickness="3"
+            BorderBrush="#FAE7BF" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="18" Text="Введите Отчество"/>
+        <TextBox x:Name="email" 
+            Height="32" 
+            Margin="239,0,207,344" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Bottom"
+            BorderThickness="3"
+            BorderBrush="#FAE7BF" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="18" Text="Введите Email"/>
+        <TextBox x:Name="phone" 
+            Height="32" 
+            Margin="239,0,207,285" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Bottom"
+            BorderThickness="3"
+            BorderBrush="#FAE7BF" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="18" Text="Введите Номер Телефона"/>
+        <TextBox x:Name="pol" 
+            Height="32" 
+            Margin="239,0,207,223" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Bottom"
+            BorderThickness="3"
+            BorderBrush="#FAE7BF" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="18" Text="Введите Пол"/>
+        <TextBox x:Name="rozdenie" 
+            Height="32" 
+            Margin="239,0,207,159" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Bottom"
+            BorderThickness="3"
+            BorderBrush="#FAE7BF" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="18" Text="Дата Рождения"/>
+        <TextBox x:Name="reg" 
+            Height="32" 
+            Margin="239,0,207,95" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Bottom"
+            BorderThickness="3"
+            BorderBrush="#FAE7BF" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="18" Text="Дата Регистрации"/>
+        <Button 
+            Content="Добавить"
+            x:Name="Добавить"
+            Background="#FAE7BF"
+            Foreground="#04A0FF"
+            FontSize="20"
+            FontFamily="Comic Sans MS"
+            Click="AddClick"
+            Margin="292,0,0,26" FontWeight="Bold" HorizontalAlignment="Left" Width="147" Height="32" VerticalAlignment="Bottom"/>
+        <Button 
+            Content="Назад"
+            x:Name="Назад"
+            Background="#FAE7BF"
+            Foreground="#04A0FF"
+            FontSize="20"
+            FontFamily="Comic Sans MS"
+            Click="Back"
+            Margin="523,0,0,26" FontWeight="Bold" HorizontalAlignment="Left" Width="147" Height="32" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
